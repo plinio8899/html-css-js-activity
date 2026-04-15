@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>🧩 CSS Flexbox</h1>
+            <p>Ejemplos prácticos de todas las propiedades</p>
+            <nav class="page-nav">
+                <a href="index.html">🏠 Inicio</a>
+                <a href="grid.html">📐 CSS Grid</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="demo-section">
+            <h2>👉 flex-direction</h2>
+            <p class="description">Define la dirección principal del eje de los elementos</p>
+            
+            <div class="demo-box">
+                <h4>flex-direction: row</h4>
+                <div class="flex-container flex-row">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <h4>flex-direction: column</h4>
+                <div class="flex-container flex-column">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 justify-content</h2>
+            <p class="description">Alinea elementos sobre el eje principal</p>
+            
+            <div class="demo-grid">
+                <div class="demo-box">
+                    <h5>flex-start</h5>
+                    <div class="flex-container justify-start">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>center</h5>
+                    <div class="flex-container justify-center">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>flex-end</h5>
+                    <div class="flex-container justify-end">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>space-between</h5>
+                    <div class="flex-container justify-between">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>space-around</h5>
+                    <div class="flex-container justify-around">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>space-evenly</h5>
+                    <div class="flex-container justify-evenly">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 align-items</h2>
+            <p class="description">Alinea elementos sobre el eje cruzado</p>
+            
+            <div class="demo-grid">
+                <div class="demo-box">
+                    <h5>flex-start</h5>
+                    <div class="flex-container align-start height-box">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>center</h5>
+                    <div class="flex-container align-center height-box">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>flex-end</h5>
+                    <div class="flex-container align-end height-box">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+                <div class="demo-box">
+                    <h5>stretch</h5>
+                    <div class="flex-container align-stretch height-box">
+                        <div class="flex-item small">A</div>
+                        <div class="flex-item small">B</div>
+                        <div class="flex-item small">C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 flex-wrap</h2>
+            <p class="description">Controla si los elementos saltan de línea cuando no caben</p>
+            
+            <div class="demo-box">
+                <h4>flex-wrap: wrap</h4>
+                <div class="flex-container flex-wrap">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                    <div class="flex-item">7</div>
+                    <div class="flex-item">8</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>🎯 Ejemplos Prácticos</h2>
+            
+            <div class="demo-box">
+                <h4>✅ Centrado Perfecto (vertical + horizontal)</h4>
+                <div class="flex-container perfect-center center-demo">
+                    <div class="center-box">¡Elemento centrado!</div>
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <h4>✅ Barra de Navegación</h4>
+                <div class="flex-container navbar-demo">
+                    <div class="nav-logo">Logo</div>
+                    <div class="flex-container">
+                        <div class="nav-item">Inicio</div>
+                        <div class="nav-item">Servicios</div>
+                        <div class="nav-item">Contacto</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Guía CSS - Todos los ejemplos listos para usar</p>
+        </div>
+    </footer>
+</body>
+</html>

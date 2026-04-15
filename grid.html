@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Guía Completa</title>
+    <link rel="stylesheet" href="grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>📐 CSS Grid Layout</h1>
+            <p>>Ejemplos prácticos de todas las propiedades</p>
+            <nav class="page-nav">
+                <a href="index.html">🏠 Inicio</a>
+                <a href="flexbox.html">🧩 Flexbox</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="demo-section">
+            <h2>👉 grid-template-columns / grid-template-rows</h2>
+            <p class="description">Define la estructura de columnas y filas del grid</p>
+            
+            <div class="demo-box">
+                <h4>grid-template-columns: 1fr 1fr 1fr</h4>
+                <div class="grid-container grid-3cols">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <h4>grid-template-columns: repeat(4, 1fr)</h4>
+                <div class="grid-container grid-4cols">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 gap (grid-gap)</h2>
+            <p class="description">Espaciado entre filas y columnas</p>
+            
+            <div class="demo-box">
+                <h4>gap: 20px</h4>
+                <div class="grid-container grid-3cols grid-gap">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 grid-column / grid-row (Spanning)</h2>
+            <p class="description">Elementos que ocupan multiples columnas o filas</p>
+            
+            <div class="demo-box">
+                <div class="grid-container grid-span-demo">
+                    <div class="grid-item span-col-2">Ocupa 2 columnas</div>
+                    <div class="grid-item">Normal</div>
+                    <div class="grid-item span-row-2">Ocupa 2 filas</div>
+                    <div class="grid-item">Normal</div>
+                    <div class="grid-item">Normal</div>
+                    <div class="grid-item">Normal</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 grid-template-areas</h2>
+            <p class="description">Define áreas nombradas para layout completo</p>
+            
+            <div class="demo-box">
+                <div class="grid-container grid-areas-demo">
+                    <div class="grid-area header-area">HEADER</div>
+                    <div class="grid-area sidebar-area">SIDEBAR</div>
+                    <div class="grid-area content-area">CONTENIDO PRINCIPAL</div>
+                    <div class="grid-area footer-area">FOOTER</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>👉 minmax() + auto-fit</h2>
+            <p class="description">Grid responsivo SIN MEDIA QUERIES</p>
+            
+            <div class="demo-box">
+                <div class="grid-container grid-autofit">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="demo-section">
+            <h2>🎯 Ejemplo Práctico: Dashboard Layout</h2>
+            
+            <div class="demo-box">
+                <div class="grid-container dashboard-grid">
+                    <div class="grid-card card-header">Panel Administrativo</div>
+                    <div class="grid-card card-menu">Menú</div>
+                    <div class="grid-card card-stats">Estadísticas</div>
+                    <div class="grid-card card-graph">Gráfico</div>
+                    <div class="grid-card card-info">Información</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Guía CSS - Todos los ejemplos listos para usar</p>
+        </div>
+    </footer>
+</body>
+</html>
